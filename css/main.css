@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+@font-face {
+    font-family: 'Cafe24Oneprettynight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal; }
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* { margin: 0; padding: 0; }
+li { list-style: none;}
+a { display: block; text-decoration: none; color: #333; }
+img { width: 100%; font-family:'Nanum Godic', sans-serif;}
+
+.wrap { width: 100%; }
+header {
+    position: fixed;
+    width: 96%;
+    height: 6vh;
+    margin: 2%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    z-index: 50;
+}
+header .menu_btn {
+    width: 10%;
+    margin: 3%;
+}
+
+header .logo {
+    width: 22%;
+    margin: 1%;
+}
+
+header .login {
+    font-size: 2vw;
+    padding: 1%;
+    margin: 1%;
+    width: 8%;
+    text-align: center;
+    border: 2px solid #c7b299;
+    
+    
+}
+header .login a {
+    color: #502c2c;
+    line-height: 7vw;
+}
+
+/*내비게이션*/
+.navi {
+    position: absolute;
+    top: 0;
+    left: -100vw;
+    width: 100%;
+    background-color: transparent;
+    
+}
+.navi nav {
+    width: 60%;
+    height: 100vh;
+    box-shadow: 50px 14px 50px 36px rgb(0 0 0 / 50%);
+    float: left;
+    box-sizing: border-box;
+    padding: 15% 10%;
+    background-color: #932424;
+    position: relative;
+}
+.navi nav ul li a {
+    padding: 10% 0 3%;
+    font-size: 3vw;
+    font-weight: bold;
+    color: #fff;
+    background-color: #932424;
+}
+
+.navi nav ul li a.active {
+    background-color: #f5eee8;
+    color: #333;
+}
+.navi nav .sub li a {
+    font-weight: normal;
+    background-color:transparent;
+    color: #333;
+}
+.navi nav .sub {
+    position: absolute;
+    background-color: #f5eee8;
+    right: 0;
+    width: 45%;
+    height: 100vh;
+    top: 0;
+    box-sizing: border-box;
+    padding: 20% 5%;
+    
+}
+.navi .close {
+    float: left;
+    margin: 12% 5%;  
+}
+
+.navi .close a {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 100%;
+    z-index: 101;
+}
+
+.main {
+    width: 100%;
+    height: 40vh;
+}
+
+.main .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.main .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main .swiper-slide h1 {
+    color: #fff;
+    text-align: center;
+    margin-top: 24vh;
+    font-size: 5vw;
+    text-shadow: 1px 1px 1px #000;
+    padding: 5%;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 32vh;
+    background-color: rgba(0,0,0,0.5);
+    font-family: 'Cafe24Oneprettynight'
+}
+
+
+.main .s1 {
+    background-image: url(../img/slide1.png);
+}
+
+.main .s2 {
+    background-image: url(../img/slide2.png);
+}
+.main .s3 {
+    background-image: url(../img/slide3.png);
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 100%;
+    opacity: 0.4;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+.promotion {
+    width: 100%;
+    height: 25vh;
+    background-color: #c7b299;
+    color: #fff;
+    padding: 10%;
+    box-sizing: border-box;
+}
+
+.promotion h2 {
+    font-family: 'Nanum Godic';
+    font-size: 5vw;
+    margin-bottom: 3%;
+}
+
+.promotion p {
+    font-size: 3.2vw;
+    line-height: 4.2vw;
+    font-family: 'Nanum Godic';
+}
+
+.promotion a {
+    background-color: #c7b299;
+    color: #fff;
+    font-size: 3vw;
+    font-weight: bold;
+    padding: 3%;
+    width: 40%;
+    text-align: center;
+    margin: 9% 0;
+    border: 3px solid #fff;
+    
+}
+
+/*탭메뉴*/
+.tab {
+    width: 100%;
+    
+}
+
+.tab .tab_title {
+    display: flex;
+    justify-content: space-between;
+}
+.tab .tab_title a {
+    width: 33.33333333333333;
+    text-align: center;
+    font-size: 3vw;
+    padding: 3%;
+    background-color: #fff;
+}
+
+.tab .tab_title a.active {
+    background-color: #f5eee8;
+}
+
+.tab .tab_content {
+    position: relative;
+    width: 100%;
+    height: 30vh;
+}
+.tab .tab_content div {
+    position: absolute;
+    width: 100%;
+    height: 30vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tab .tab_content .con1 {
+    background-image: url(../img/tab1.jpg);
+}
+
+.tab .tab_content .con2 {
+    background-image: url(../img/tab2.jpg);
+    
+}
+
+.tab .tab_content .con3 {
+    background-image: url(../img/tab3.jpg);
+}
+
+.how {
+    width: 100%;
+    display: flex;
+}
+
+.how div {
+    width: 50%;
+    padding: 5%;
+    background-color: #ee3037;
+    color: #fff;
+    text-align: center;
+    font-size: 3vw;
+}
+.how h3 {
+    font-family: 'Nanum Godic';
+    font-size: 3.9vw;
+    margin-bottom: 3%;
+}
+.how .how1 {
+    border-right: 2px solid #fff;
+}
+
+.how a {
+    background-color: #ee3037;
+    color: #fff;
+    font-size: 3vw;
+    font-weight: bold;
+    padding: 3%;
+    width: 70%;
+    text-align: center;
+    margin: 9% auto;
+    border: 3px solid #fff;
+    
+}
+
+.box {
+    width: 100%;
+    padding-top: 10%;
+}
+
+.box h1 {
+    font-size: 6vw;
+    color: #502c2c;
+    font-family:'Nanum Godic';
+    text-shadow: 1px 1px 1px #333;
+    margin: 2%;
+    margin-bottom: 5%;
+}
+
+.box p {
+    font-size: 3vw;
+    line-height: 4vw;
+    margin: 2% 2%;
+    
+}
+
+.box a {
+    font-size: 3vw;
+    color: #a1262a;
+    font-weight: bold;
+    margin: 2% 2%;
+    margin-top: 5%;
+    
+}
+.box span {
+    width: 40%;
+    display: block;
+    margin-top: -4%;
+    font-weight: bold;
+    margin-bottom: 5%;
+
+    
+}
+
+.box ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.box ul li {
+    width: 50%;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 1%;
+    text-align: center;
+}
+
+
+.desert {
+    background-color: #fff;
+    padding-top: 10%;
+    
+}
+.desert .list_img {
+    clear: both;
+}
+
+
+.desert a {
+    float: right;
+    font-size: 3vw;
+    color: #a1262a;
+    font-weight: bold;
+    margin: 1% 2%;
+}
+
+.desert a span {
+    width: 100%;
+    display: block;
+}
+
+.desert ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.desert ul li {
+    padding: 0;
+    background-color: transparent;
+    width: 50%;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 1%;
+    text-align: center;
+}
+
+footer {
+    padding-top: 15%;
+}
+
+.family {
+    margin-left: 5%;
+    position: relative;
+    width: 40vw;
+    float: left;
+    margin-right: 30%;
+    
+}
+
+.family .site {
+    width: 100%;
+    position: absolute;
+    bottom:  0;
+    z-index: 60;
+    transition: all 0.5s;
+    max-height: 0;
+    overflow: hidden;
+}
+.family .site ul {width: 100%;}
+.family .site.active {
+    max-height: 28vw;
+    bottom: 9.1vw;
+}
+
+.family .site ul li a {
+    background-color: #3c3c3c;
+    text-align: center;
+    font-size: 3vw;
+    padding: 8%;
+    border-radius: 5vw;
+    color: #fff;
+    white-space: nowrap;
+    margin: 1%;
+    
+}
+
+.family .family_btn {
+    position: relative;
+    z-index: 70;
+}
+
+.family .family_btn a {
+   border: 1px solid #3c3c3c;
+    background-color: #fff;
+    font-size: 2.8vw;
+    text-align: center;
+    padding: 6%;
+    border-radius: 6vw;
+    position: relative;
+    text-indent: -20px;
+    
+    
+}
+
+
+.family .family_btn a span {
+    display: block;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    background-image: url(../img/family_site_arrow.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size:15px;
+    right: 20px;
+    bottom: 12px;
+}
+
+.family .family_btn a span.active {
+    background-position: right;
+}
+
+.top {
+    float: left;
+    width: 12vw;
+    height: 5vw;
+    padding: 1.3%;
+    font-size: 2.5vw;
+    background-color: #ee3037;
+    line-height: 5vw;
+    border-radius: 20vw;
+    text-align: center;
+    margin-top: 1%;
+}
+
+.info1 {
+    width: 100%;
+    clear: both;
+    padding-top: 5%;
+    
+}
+
+.info1 ul {
+    display: flex;
+}
+
+.info1 ul li {
+    margin-right: 5%;
+    
+}
+
+.info1 ul li a {
+    white-space: nowrap;
+}
+
+.info1 ul li a:after {
+    content: "|";
+    margin-left: 2vw;
+}
+
+.info2 address {
+    font-style: normal;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    
+}
+
+.info2 p {
+    font-size: 2.5vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
