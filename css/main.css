@@ -224,6 +224,7 @@ header .login a {
 
 .tab .tab_title a.active {
     background-color: #f5eee8;
+    width: 33.33333333333333;
 }
 
 .tab .tab_content {
@@ -382,15 +383,15 @@ header .login a {
 }
 
 footer {
-    padding-top: 15%;
+    padding-top: 5%;
 }
 
 .family {
-    margin-left: 5%;
+    margin-left: 3%;
     position: relative;
     width: 40vw;
     float: left;
-    margin-right: 30%;
+    margin-right: 35%;
     
 }
 
@@ -473,7 +474,7 @@ footer {
 .info1 {
     width: 100%;
     clear: both;
-    padding-top: 5%;
+    padding-top: 2%;
     
 }
 
@@ -482,12 +483,12 @@ footer {
 }
 
 .info1 ul li {
-    margin-right: 5%;
-    
+    padding: 2vw;
 }
 
 .info1 ul li a {
     white-space: nowrap;
+    margin-left: 2vw;
 }
 
 .info1 ul li a:after {
@@ -497,13 +498,15 @@ footer {
 
 .info2 address {
     font-style: normal;
-    margin-bottom: 5%;
-    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    padding: 2vw;
     
 }
 
 .info2 p {
     font-size: 2.5vw;
+    margin-bottom: 5vw;
 }
 
 
