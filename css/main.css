@@ -61,6 +61,7 @@ header .login a {
     left: -100vw;
     width: 100%;
     background-color: transparent;
+    z-index: 100;
     
 }
 .navi nav {
