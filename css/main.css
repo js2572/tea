@@ -215,7 +215,7 @@ header .login a {
     justify-content: space-between;
 }
 .tab .tab_title a {
-    width: 33.33333333333333;
+    width: 33.33333333333333%;
     text-align: center;
     font-size: 3vw;
     padding: 3%;
@@ -224,7 +224,7 @@ header .login a {
 
 .tab .tab_title a.active {
     background-color: #f5eee8;
-    width: 33.33333333333333;
+    width: 33.33333333333333%;
 }
 
 .tab .tab_content {
@@ -384,6 +384,8 @@ header .login a {
 
 footer {
     padding-top: 5%;
+    background-color: #f5eee8;
+    margin-top: 10vw;
 }
 
 .family {
@@ -472,7 +474,7 @@ footer {
 }
 
 .info1 {
-    width: 100%;
+    width: 90%;
     clear: both;
     padding-top: 2%;
     
@@ -483,7 +485,7 @@ footer {
 }
 
 .info1 ul li {
-    padding: 2vw;
+    margin-left: 3vw;
 }
 
 .info1 ul li a {
@@ -493,7 +495,7 @@ footer {
 
 .info1 ul li a:after {
     content: "|";
-    margin-left: 2vw;
+    margin-left: 3vw;
 }
 
 .info2 address {
@@ -501,13 +503,13 @@ footer {
     margin-bottom: 2%;
     margin-top: 1%;
     padding: 2vw;
+    margin-left: 2vw;
     
 }
 
 .info2 p {
     font-size: 2.5vw;
-    margin-bottom: 5vw;
-    margin-left: 2vw;
+    margin-left: 3vw;
 }
 
 
