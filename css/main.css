@@ -482,6 +482,7 @@ footer {
 
 .info1 ul {
     display: flex;
+    flex-flow: row wrap;
 }
 
 .info1 ul li {
@@ -491,6 +492,8 @@ footer {
 .info1 ul li a {
     white-space: nowrap;
     margin-left: 2vw;
+    font-size: 5vw;
+    
 }
 
 .info1 ul li a:after {
