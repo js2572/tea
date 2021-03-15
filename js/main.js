@@ -35,6 +35,7 @@ $(document).ready(function(){
             autoplay:{
                 delay:4000,
             },
+            loop:true,
         pagination: {
             el: '.swiper-pagination',
             clickable:true
